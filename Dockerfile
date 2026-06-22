@@ -1,5 +1,5 @@
 # Use the official llama.cpp server image
-FROM ghcr.io/ggerganov/llama.cpp:server
+FROM ghcr.io/ggml-org/llama.cpp:server
 
 # Switch to root to install curl and configure directory permissions
 USER root
