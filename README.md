@@ -40,8 +40,8 @@ git init -b main
 git add .
 git commit -m "Initial commit for llama.cpp server"
 
-# Add Hugging Face Space remote (replace with your username and space name)
-git remote add origin https://huggingface.co/spaces/YOUR_HF_USERNAME/YOUR_SPACE_NAME
+# Add Hugging Face Space remote
+git remote add origin https://huggingface.co/spaces/fallingbody/unlimited-llm
 
 # Push to deploy (this will prompt for your Hugging Face username and password/token)
 git push -u origin main --force
@@ -65,7 +65,7 @@ You can set up a GitHub Actions workflow to automatically push changes to your H
 
 ### Step 3: Configure Repo Details in deploy.yml
 1. Open `.github/workflows/deploy.yml` in your repository.
-2. Replace `YOUR_HF_USERNAME/YOUR_SPACE_NAME` with your actual Hugging Face username and Space name.
+2. Verify that `huggingface_repo_id` is set to `fallingbody/unlimited-llm`.
 3. Push your repository to GitHub. The GitHub Actions runner will automatically trigger and sync the code to Hugging Face!
 
 ---
@@ -93,14 +93,14 @@ In your `config.json` for Continue, add the following configuration:
       "title": "Qwen 2.5 Coder 14B (HF Space)",
       "provider": "openai",
       "model": "qwen2.5-coder-14b-instruct",
-      "apiBase": "https://YOUR_HF_USERNAME-YOUR_SPACE_NAME.hf.space/v1",
+      "apiBase": "https://fallingbody-unlimited-llm.hf.space/v1",
       "apiKey": "YOUR_LLAMA_API_KEY_SECRET" // Leave empty if you didn't set LLAMA_API_KEY
     }
   ]
 }
 ```
 
-*Note: Replace `YOUR_HF_USERNAME-YOUR_SPACE_NAME` with your actual Space subdomain (using a hyphen between username and space name).*
+*Note: Replace `fallingbody-unlimited-llm` with your actual Space subdomain if different (using a hyphen between username and space name).*
 
 ---
 

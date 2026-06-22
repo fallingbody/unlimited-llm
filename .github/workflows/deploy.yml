@@ -20,5 +20,5 @@ jobs:
         with:
           github_repo_id: ${{ github.repository }}
           # Replace with your Hugging Face username and Space name
-          huggingface_repo_id: YOUR_HF_USERNAME/YOUR_SPACE_NAME
+          huggingface_repo_id: fallingbody/unlimited-llm
           hf_token: ${{ secrets.HF_TOKEN }}
