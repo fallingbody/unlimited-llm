@@ -16,7 +16,7 @@ jobs:
           fetch-depth: 0
 
       - name: Sync to Hugging Face Space
-        uses: huggingface/hub-sync@v0.1.3
+        uses: huggingface/hub-sync@v0.1.0
         with:
           github_repo_id: ${{ github.repository }}
           # Replace with your Hugging Face username and Space name
