@@ -14,4 +14,4 @@ EXPOSE 7860
 # --hf-file            : The specific Q4_K_M GGUF model file
 # --ctx-size 8192      : 8K context size (leaves ~4GB RAM free to avoid OOM on 16GB free tier)
 # --threads 2          : Optimized for the 2 vCPUs allocated to free Spaces
-ENTRYPOINT ["/app/llama-server", "--host", "0.0.0.0", "--port", "7860", "--hf-repo", "Qwen/Qwen2.5-Coder-14B-Instruct-GGUF", "--hf-file", "qwen2.5-coder-14b-instruct-q4_k_m.gguf", "--ctx-size", "8192", "--threads", "2"]
+ENTRYPOINT ["/app/llama-server", "--host", "0.0.0.0", "--port", "7860", "--hf-repo", "Qwen/Qwen2.5-Coder-7B-Instruct-GGUF", "--hf-file", "qwen2.5-coder-7b-instruct-q4_k_m.gguf", "--ctx-size", "8192", "--threads", "2"]

@@ -1,5 +1,5 @@
 ---
-title: Qwen2.5 Coder 14B Q4_K_M
+title: Qwen2.5 Coder 7B Q4_K_M
 emoji: 💻
 colorFrom: blue
 colorTo: purple
@@ -7,9 +7,9 @@ sdk: docker
 pinned: false
 ---
 
-# Qwen 2.5 Coder 14B Q4_K_M on Hugging Face Spaces
+# Qwen 2.5 Coder 7B Q4_K_M on Hugging Face Spaces
 
-This repository contains the configuration to run **Qwen 2.5 Coder 14B Q4_K_M** (quantized GGUF format) on a free Hugging Face CPU-only Space using a high-performance C++ `llama-server`.
+This repository contains the configuration to run **Qwen 2.5 Coder 7B Q4_K_M** (quantized GGUF format) on a free Hugging Face CPU-only Space using a high-performance C++ `llama-server`.
 
 ## Features
 - **Zero Python Overhead**: Runs on pure C++ `llama.cpp` server.
@@ -23,7 +23,7 @@ This repository contains the configuration to run **Qwen 2.5 Coder 14B Q4_K_M** 
 
 ### Step 1: Create a Space on Hugging Face
 1. Go to [huggingface.co/new-space](https://huggingface.co/new-space).
-2. Choose a name (e.g., `qwen2.5-coder-14b-gguf`).
+2. Choose a name (e.g., `qwen2.5-coder-7b-gguf`).
 3. Select **Docker** as the SDK.
 4. Choose **Blank** template.
 5. Set Space visibility to **Public** or **Private** (Private is recommended if you want to restrict API usage).
@@ -90,9 +90,9 @@ In your `config.json` for Continue, add the following configuration:
 {
   "models": [
     {
-      "title": "Qwen 2.5 Coder 14B (HF Space)",
+      "title": "Qwen 2.5 Coder 7B (HF Space)",
       "provider": "openai",
-      "model": "qwen2.5-coder-14b-instruct",
+      "model": "qwen2.5-coder-7b-instruct",
       "apiBase": "https://fallingbody-unlimited-llm.hf.space/v1",
       "apiKey": "YOUR_LLAMA_API_KEY_SECRET" // Leave empty if you didn't set LLAMA_API_KEY
     }
